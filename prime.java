@@ -23,10 +23,20 @@ public class prime {
         }
         return true;
     }
-        
 
+    public static void primeinrange(int n){
+        System.out.print("prime_no:");
+       for(int i=2;i<=n;i++){    
+        if(prime_num(i)){
+            System.out.print(" "+i);
+        }
+       }
+       System.out.println();
+    }
+        
     public static void main(String[] args) {
         System.out.println(prime_no(12));
         System.out.println(prime_num(5));
+        primeinrange(10);
     }
 }
